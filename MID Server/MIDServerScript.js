@@ -1,7 +1,7 @@
 const Tail = require('nodejs-tail');
 var io = require('socket.io-client')('http://localhost:3000');
 
-const filename = 'a.txt';
+const filename = 'agent0.log.0';
 const tail = new Tail(filename);
  
 tail.on('line', function(line) {
